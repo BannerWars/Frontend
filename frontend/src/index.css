@@ -1,13 +1,61 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --color-background:#1F1C1C;
+  --color-font: #BCBABA;
+
+  --font-hero: 'AlegreyaSans-Regular', sans-serif;
+  --font-hero-medium: 'AlegreyaSans-Medium', sans-serif;
+  --font-hero-bold: 'AlegreyaSans-ExtraBold', sans-serif;
+  --font-copy-italic: 'WorkSans-Italic-VariableFont_wght', sans-serif;
+  --font-copy: 'WorkSans-Regular', sans-serif;
+  --font-copy-bold: 'WorkSans-SemiBold', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'AlegreyaSans-ExtraBold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('AlegreyaSans-ExtraBold'), url('./fonts/AlegreyaSans-ExtraBold.ttf') format('opentype')
+}
+
+@font-face {
+  font-family: 'AlegreyaSans-Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('AlegreyaSans-Medium'), url('./fonts/AlegreyaSans-Medium.ttf') format('opentype')
+}
+
+@font-face {
+  font-family: 'AlegreyaSans-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('AlegreyaSans-Regular'), url('./fonts/AlegreyaSans-Regular.ttf') format('opentype')
+}
+
+@font-face {
+  font-family: 'WorkSans-Italic-VariableFont_wght';
+  font-style: normal;
+  font-weight: normal;
+  src: local('WorkSans-Italic-VariableFont_wght'), url('./fonts/WorkSans-Italic-VariableFont_wght.ttf') format('opentype')
+}
+
+@font-face {
+  font-family: 'WorkSans-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('WorkSans-Regular'), url('./fonts/WorkSans-Regular.ttf') format('opentype')
+}
+
+@font-face {
+  font-family: 'WorkSans-SemiBold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('WorkSans-SemiBold'), url('./fonts/WorkSans-SemiBold.ttf') format('opentype')
+}
+
+
+body {
+  margin: 0;
+  font-family: var(--font-copy);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
