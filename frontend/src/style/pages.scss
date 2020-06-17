@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+
+    &> .header {
+        font-family: var(--font-hero-bold);
+        color: var(--color-font);
+        margin: 20px;
+    }
+
+    &> .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 20px;
+
+        &> .text {
+            color: var(--color-font);
+            width: 35%;
+            transform: translate(0px, 40px);
+        }
+
+        &> .banners {
+            width: 35%;
+            height: 200px;
+            background-color: beige;
+        }
+    }
+}

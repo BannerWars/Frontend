@@ -1,0 +1,43 @@
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 50px;
+}
+
+.container > .header {
+  font-family: var(--font-hero-bold);
+  color: var(--color-font);
+  margin: 20px;
+}
+
+.container > .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 20px;
+}
+
+.container > .content > .text {
+  color: var(--color-font);
+  width: 35%;
+  -webkit-transform: translate(0px, 40px);
+          transform: translate(0px, 40px);
+}
+
+.container > .content > .banners {
+  width: 35%;
+  height: 200px;
+  background-color: beige;
+}
+/*# sourceMappingURL=pages.css.map */
