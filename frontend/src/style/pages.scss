@@ -27,4 +27,45 @@
             background-color: beige;
         }
     }
+
+    & > .signUp {
+        background-color: var(--color-form-background);
+        margin: 20px 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &> h2 {
+            font-family: var(--font-hero-bold);
+            color: var(--color-background);
+        }
+
+        &> .form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+            margin: 40px;
+
+            &> input {
+                height: 25px;
+                width: 400px;
+                margin: none;
+            }
+
+            &> p {
+                margin: 10px 0px;
+            }
+        }
+
+        &> .button {
+            &> button {
+                height: 35px;
+                width: 350px;
+                background-color: var(--color-button);
+                border: none;
+                color: var(--color-form-background);
+            }
+        }
+    }
 }

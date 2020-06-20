@@ -4,14 +4,15 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
-import Home from "./pages/Home"
+// import Home from "./pages/Home"
+import SignUp from "./pages/SignUp"
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Navbar />
-        <Home />
+        <SignUp />
         <Footer />
       </div>
     </Router>
