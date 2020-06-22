@@ -65,6 +65,40 @@
                 background-color: var(--color-button);
                 border: none;
                 color: var(--color-form-background);
+                font-size: .9em;
+                font-weight: bolder;
+            }
+
+            &> :nth-child(2) {
+                width: 350px;
+                height: 3px;
+                background-color: black;
+                opacity: 50%;
+                transform: translate(182px, -3px);
+            }
+
+            &> :nth-child(3) {
+                width: 350px;
+                height: 3px;
+                background-color: white;
+                opacity: 50%;
+                transform: translate(182px, -38px);
+            }
+
+            &> :nth-child(4) {
+                width: 35px;
+                height: 3px;
+                background-color: white;
+                opacity: 50%;
+                transform: translate(166px, -25px) rotate(90deg);
+            }
+
+            &> :nth-child(5) {
+                width: 35px;
+                height: 3px;
+                background-color: black;
+                opacity: 50%;
+                transform: translate(513px, -28px) rotate(90deg);
             }
         }
     }
