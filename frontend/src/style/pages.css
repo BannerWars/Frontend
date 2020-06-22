@@ -41,7 +41,7 @@
   background-color: beige;
 }
 
-.container > .signUp {
+.container > .auth {
   background-color: var(--color-form-background);
   margin: 20px 300px;
   display: -webkit-box;
@@ -56,12 +56,12 @@
           justify-content: center;
 }
 
-.container > .signUp > h2 {
+.container > .auth > h2 {
   font-family: var(--font-hero-bold);
   color: var(--color-background);
 }
 
-.container > .signUp > .form {
+.container > .auth > .form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,17 +76,22 @@
   margin: 40px;
 }
 
-.container > .signUp > .form > input {
+.container > .auth > .form > input {
   height: 25px;
   width: 400px;
   margin: none;
 }
 
-.container > .signUp > .form > p {
+.container > .auth > .form > p {
   margin: 10px 0px;
 }
 
-.container > .signUp > .button > button {
+.container > .auth > p {
+  color: var(--color-button);
+  text-decoration: underline;
+}
+
+.container > .auth > .button > button {
   height: 35px;
   width: 350px;
   background-color: var(--color-button);
@@ -96,7 +101,7 @@
   font-weight: bolder;
 }
 
-.container > .signUp > .button > :nth-child(2) {
+.container > .auth > .button > :nth-child(2) {
   width: 350px;
   height: 3px;
   background-color: black;
@@ -105,7 +110,7 @@
           transform: translate(182px, -3px);
 }
 
-.container > .signUp > .button > :nth-child(3) {
+.container > .auth > .button > :nth-child(3) {
   width: 350px;
   height: 3px;
   background-color: white;
@@ -114,7 +119,7 @@
           transform: translate(182px, -38px);
 }
 
-.container > .signUp > .button > :nth-child(4) {
+.container > .auth > .button > :nth-child(4) {
   width: 35px;
   height: 3px;
   background-color: white;
@@ -123,7 +128,7 @@
           transform: translate(166px, -25px) rotate(90deg);
 }
 
-.container > .signUp > .button > :nth-child(5) {
+.container > .auth > .button > :nth-child(5) {
   width: 35px;
   height: 3px;
   background-color: black;

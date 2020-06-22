@@ -28,7 +28,7 @@
         }
     }
 
-    & > .signUp {
+    & > .auth {
         background-color: var(--color-form-background);
         margin: 20px 300px;
         display: flex;
@@ -56,6 +56,12 @@
             &> p {
                 margin: 10px 0px;
             }
+
+        }
+
+        &> p {
+            color: var(--color-button);
+            text-decoration: underline;
         }
 
         &> .button {
