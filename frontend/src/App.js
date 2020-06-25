@@ -9,6 +9,9 @@ import SignUp from "./pages/SignUp"
 import LogIn from "./pages/LogIn"
 import ForgotPassword from "./pages/ForgotPassword"
 import Verification from "./pages/Verification"
+import ResetPassword from './pages/ResetPassword'
+import CreateLobby from "./pages/CreateLobby"
+import InviteFriends from "./pages/InviteFriends"
 
 function App() {
   return (
@@ -21,6 +24,9 @@ function App() {
           <Route exact path="/sign-up" component={SignUp} />
           <Route exact path="/forgot-password" component={ForgotPassword} />
           <Route exact path="/verification" component={Verification} />
+          <Route exact path="/reset-password" component={ResetPassword} />
+          <Route exact path="/create-lobby" component={CreateLobby} />
+          <Route exact path="/invite-friends" component={InviteFriends} />
         </Switch>
         <Footer />
       </div>
