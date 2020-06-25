@@ -7,10 +7,16 @@
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 50px;
+  color: var(--color-font);
 }
 
 .container > h1 {
   color: var(--color-font);
+  font-family: var(--font-hero-bold);
+}
+
+.container > p {
+  font-size: 1.1em;
 }
 
 .container > .header {
@@ -81,6 +87,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   text-align: left;
+  margin-bottom: 12px;
 }
 
 .container > .auth > .form > input {
@@ -99,7 +106,7 @@
 }
 
 .container > .auth > .button {
-  margin: 20px;
+  margin: 15px;
 }
 
 .container > .auth > .button > button {
@@ -146,5 +153,22 @@
   opacity: 50%;
   -webkit-transform: translate(331px, -28px) rotate(90deg);
           transform: translate(331px, -28px) rotate(90deg);
+}
+
+.container > #verification {
+  font-size: 3em;
+  letter-spacing: .02em;
+  width: 300px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.container > a {
+  color: var(--color-button);
+}
+
+.container > #log-in {
+  margin: 35px;
 }
 /*# sourceMappingURL=pages.css.map */

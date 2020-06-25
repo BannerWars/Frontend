@@ -20,7 +20,7 @@ function App() {
           <Route exact path="/log-in" component={LogIn} />
           <Route exact path="/sign-up" component={SignUp} />
           <Route exact path="/forgot-password" component={ForgotPassword} />
-          <Router exact path="verification" component={Verification} />
+          <Route exact path="/verification" component={Verification} />
         </Switch>
         <Footer />
       </div>
