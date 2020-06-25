@@ -12,12 +12,16 @@ nav {
     &> .logo {
         height: 100%;
         width: 50%;
-        // transform: translate(100px 10000px);
-        &> h1 {
-            font-family: var(--font-hero-bold);
-            color: var(--color-font);
-            font-size: 2.3em;
-            transform: translate(0px, 20px);
+
+        &> a {
+            text-decoration: none;
+            
+            &> h1 {
+                font-family: var(--font-hero-bold);
+                color: var(--color-font);
+                font-size: 2.3em;
+                transform: translate(0px, 20px);
+            }
         }
     }
 

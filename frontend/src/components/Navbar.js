@@ -14,7 +14,9 @@ export default function Navbar() {
     return (
         <nav>
             <div className="logo">
-                <h1>Banner Wars</h1>                
+                <a href="/">
+                    <h1>Banner Wars</h1>   
+                </a>             
             </div>
             <ul className="nav_buttons">
                 { 
