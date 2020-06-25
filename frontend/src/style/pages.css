@@ -9,6 +9,10 @@
   margin: 50px;
 }
 
+.container > h1 {
+  color: var(--color-font);
+}
+
 .container > .header {
   font-family: var(--font-hero-bold);
   color: var(--color-font);
@@ -54,11 +58,15 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container > .auth > h2 {
   font-family: var(--font-hero-bold);
   color: var(--color-background);
+  margin-bottom: 10px;
 }
 
 .container > .auth > .form {
@@ -73,7 +81,6 @@
       -ms-flex-pack: center;
           justify-content: center;
   text-align: left;
-  margin: 40px;
 }
 
 .container > .auth > .form > input {
@@ -91,6 +98,10 @@
   text-decoration: underline;
 }
 
+.container > .auth > .button {
+  margin: 20px;
+}
+
 .container > .auth > .button > button {
   height: 35px;
   width: 350px;
@@ -106,8 +117,8 @@
   height: 3px;
   background-color: black;
   opacity: 50%;
-  -webkit-transform: translate(182px, -3px);
-          transform: translate(182px, -3px);
+  -webkit-transform: translate(0px, -3px);
+          transform: translate(0px, -3px);
 }
 
 .container > .auth > .button > :nth-child(3) {
@@ -115,8 +126,8 @@
   height: 3px;
   background-color: white;
   opacity: 50%;
-  -webkit-transform: translate(182px, -38px);
-          transform: translate(182px, -38px);
+  -webkit-transform: translate(0px, -38px);
+          transform: translate(0px, -38px);
 }
 
 .container > .auth > .button > :nth-child(4) {
@@ -124,8 +135,8 @@
   height: 3px;
   background-color: white;
   opacity: 50%;
-  -webkit-transform: translate(166px, -25px) rotate(90deg);
-          transform: translate(166px, -25px) rotate(90deg);
+  -webkit-transform: translate(-16px, -25px) rotate(90deg);
+          transform: translate(-16px, -25px) rotate(90deg);
 }
 
 .container > .auth > .button > :nth-child(5) {
@@ -133,7 +144,7 @@
   height: 3px;
   background-color: black;
   opacity: 50%;
-  -webkit-transform: translate(513px, -28px) rotate(90deg);
-          transform: translate(513px, -28px) rotate(90deg);
+  -webkit-transform: translate(331px, -28px) rotate(90deg);
+          transform: translate(331px, -28px) rotate(90deg);
 }
 /*# sourceMappingURL=pages.css.map */
