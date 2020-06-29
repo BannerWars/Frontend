@@ -12,6 +12,7 @@ import Verification from "./pages/Verification"
 import ResetPassword from './pages/ResetPassword'
 import CreateLobby from "./pages/CreateLobby"
 import InviteFriends from "./pages/InviteFriends"
+import CreateTeam from "./pages/CreateTeam"
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route exact path="/reset-password" component={ResetPassword} />
           <Route exact path="/create-lobby" component={CreateLobby} />
           <Route exact path="/invite-friends" component={InviteFriends} />
+          <Route exact path="/create-team" component={CreateTeam} />
         </Switch>
         <Footer />
       </div>

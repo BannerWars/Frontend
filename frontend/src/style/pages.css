@@ -38,15 +38,94 @@
   margin: 20px;
 }
 
-.container > .content > .text {
-  color: var(--color-font);
-  width: 35%;
-  -webkit-transform: translate(0px, 40px);
-          transform: translate(0px, 40px);
+.container > .content > .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transform: translate(80px, 0px);
+          transform: translate(80px, 0px);
 }
 
-.container > .content > .banners {
-  width: 35%;
+.container > .content > .left > .text {
+  color: var(--color-font);
+  width: 40%;
+  -webkit-transform: translate(100px, 0px);
+          transform: translate(100px, 0px);
+}
+
+.container > .content > .left > .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translate(140px, 40px);
+          transform: translate(140px, 40px);
+}
+
+.container > .content > .left > .buttons > .button {
+  margin: 15px;
+}
+
+.container > .content > .left > .buttons > .button > button {
+  height: 35px;
+  width: 130px;
+  background-color: var(--color-button);
+  border: none;
+}
+
+.container > .content > .left > .buttons > .button > button > a {
+  color: var(--color-form-background);
+  font-size: .9em;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.container > .content > .left > .buttons > .button > :nth-child(2) {
+  width: 130px;
+  height: 3px;
+  background-color: black;
+  opacity: 50%;
+  -webkit-transform: translate(0px, -3px);
+          transform: translate(0px, -3px);
+}
+
+.container > .content > .left > .buttons > .button > :nth-child(3) {
+  width: 130px;
+  height: 3px;
+  background-color: white;
+  opacity: 50%;
+  -webkit-transform: translate(0px, -38px);
+          transform: translate(0px, -38px);
+}
+
+.container > .content > .left > .buttons > .button > :nth-child(4) {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  opacity: 50%;
+  -webkit-transform: translate(-16px, -25px) rotate(90deg);
+          transform: translate(-16px, -25px) rotate(90deg);
+}
+
+.container > .content > .left > .buttons > .button > :nth-child(5) {
+  width: 35px;
+  height: 3px;
+  background-color: black;
+  opacity: 50%;
+  -webkit-transform: translate(111px, -28px) rotate(90deg);
+          transform: translate(111px, -28px) rotate(90deg);
+}
+
+.container > .content > .right {
+  -webkit-transform: translate(-200px, 0px);
+          transform: translate(-200px, 0px);
+}
+
+.container > .content > .right > .banners {
+  width: 350px;
   height: 200px;
   background-color: beige;
 }
@@ -115,6 +194,16 @@
   width: 350px;
   background-color: var(--color-button);
   border: none;
+  color: var(--color-form-background);
+  font-size: .9em;
+  font-weight: bolder;
+}
+
+.container > .auth > .button > button > a {
+  height: 35px;
+  width: 100px;
+  background-color: var(--color-button);
+  border: solid;
   color: var(--color-form-background);
   font-size: .9em;
   font-weight: bolder;

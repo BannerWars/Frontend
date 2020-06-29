@@ -9,9 +9,29 @@ export default function Home() {
                 <h1>Welcome to Banner Wars!</h1>
             </div>
             <div className="content">
-                <div className="text">Banner Wars is excited to welcome you to the family! Here you can create capture the flag type game lobbies for you and your friends to play in. Simply sign up for an account, and get started with creating game lobbies right away!</div>
-                <div className="banners">
-                    <p>Banners image to come</p>
+                <div className="left">
+                    <div className="text">Banner Wars is excited to welcome you to the family! Here you can create capture the flag type game lobbies for you and your friends to play in. Simply sign up for an account, and get started with creating game lobbies right away!</div>
+                    <div className="buttons">
+                        <div className="button">
+                            <button><a href="">NEW LOBBY</a></button>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div className="button">
+                            <button><a href="">NEW TEAM</a></button>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div className="right">
+                    <div className="banners">
+                        <p>Banners image to come</p>
+                    </div>
                 </div>
             </div>
         </div>
