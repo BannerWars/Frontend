@@ -13,6 +13,7 @@ import ResetPassword from './pages/ResetPassword'
 import CreateLobby from "./pages/CreateLobby"
 import InviteFriends from "./pages/InviteFriends"
 import CreateTeam from "./pages/CreateTeam"
+import Lobbies from "./pages/Lobbies"
 
 function App() {
   return (
@@ -21,12 +22,13 @@ function App() {
         <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/lobbies" component={Lobbies} />
+          <Route exact path="/create-lobby" component={CreateLobby} />
           <Route exact path="/log-in" component={LogIn} />
           <Route exact path="/sign-up" component={SignUp} />
           <Route exact path="/forgot-password" component={ForgotPassword} />
           <Route exact path="/verification" component={Verification} />
           <Route exact path="/reset-password" component={ResetPassword} />
-          <Route exact path="/create-lobby" component={CreateLobby} />
           <Route exact path="/invite-friends" component={InviteFriends} />
           <Route exact path="/create-team" component={CreateTeam} />
         </Switch>

@@ -72,7 +72,7 @@
 .container > .content > .left > .buttons > .button > button {
   height: 35px;
   width: 130px;
-  background-color: var(--color-button);
+  background-color: var(--color-small-button);
   border: none;
 }
 
@@ -260,5 +260,39 @@
 
 .container > #log-in {
   margin: 35px;
+}
+
+.container > .page-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 800px;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.container > .page-content > .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+}
+
+.container > .page-content > .header > h2 {
+  font-family: var(--font-hero);
+  font-size: 1.7em;
+  margin: 0px;
+}
+
+.container > .page-content > .container {
+  background-color: var(--color-form-background);
 }
 /*# sourceMappingURL=pages.css.map */

@@ -46,7 +46,7 @@
                     &> button {
                         height: 35px;
                         width: 130px;
-                        background-color: var(--color-button);
+                        background-color: var(--color-small-button);
                         border: none;
         
                         &> a {
@@ -221,6 +221,29 @@
 
     &> #log-in {
         margin: 35px;
+    }
+
+    &> .page-content {
+        display: flex;
+        flex-direction: column;
+        width: 800px;
+        align-self: center;
+
+        &> .header {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+
+            &> h2 {
+                font-family: var(--font-hero);
+                font-size: 1.7em;
+                margin: 0px;
+            }
+        }
+
+        &> .container {
+            background-color: var(--color-form-background);
+        }
     }
 
 }
