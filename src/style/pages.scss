@@ -76,7 +76,7 @@
                     &> :nth-child(4) {
                         width: 35px;
                         height: 3px;
-                        background-color: white;
+                        background-color: black;
                         opacity: 50%;
                         transform: translate(-16px, -25px) rotate(90deg);
                     }
@@ -84,7 +84,7 @@
                     &> :nth-child(5) {
                         width: 35px;
                         height: 3px;
-                        background-color: black;
+                        background-color: white;
                         opacity: 50%;
                         transform: translate(111px, -28px) rotate(90deg);
                     }
@@ -193,7 +193,7 @@
             &> :nth-child(4) {
                 width: 35px;
                 height: 3px;
-                background-color: white;
+                background-color: black;
                 opacity: 50%;
                 transform: translate(-16px, -25px) rotate(90deg);
             }
@@ -201,7 +201,7 @@
             &> :nth-child(5) {
                 width: 35px;
                 height: 3px;
-                background-color: black;
+                background-color: white;
                 opacity: 50%;
                 transform: translate(331px, -28px) rotate(90deg);
             }
@@ -226,7 +226,7 @@
     &> .page-content {
         display: flex;
         flex-direction: column;
-        width: 800px;
+        width: 700px;
         align-self: center;
 
         &> .header {
@@ -243,6 +243,121 @@
 
         &> .container {
             background-color: var(--color-form-background);
+            width: 700px;
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+
+            &> .instances {
+                display: flex;
+                flex-direction: column;
+                margin-top: 25px;
+
+                &> .instance {
+                    margin: 10px;
+                    align-self: center;
+                    height: 40px;
+                    width: 500px;
+                    background-color: var(--color-instances);
+                    border: none;
+                    
+                    &> p {
+                        color: var(--color-form-background);
+                        font-size: .9em;
+                        text-align: left;
+                        transform: translate(10px, -3px);
+                        font-family: var(--font-hero-bold);
+                    }
+        
+                    &> :nth-child(2) {
+                        width: 500px;
+                        height: 3px;
+                        background-color: black;
+                        opacity: 50%;
+                        transform: translate(0px, -10px);
+                    }
+        
+                    &> :nth-child(3) {
+                        width: 500px;
+                        height: 3px;
+                        background-color: white;
+                        opacity: 50%;
+                        transform: translate(0px, -49px);
+                    }
+        
+                    &> :nth-child(4) {
+                        width: 40px;
+                        height: 3px;
+                        background-color: black;
+                        opacity: 50%;
+                        transform: translate(-19px, -34px) rotate(90deg);
+                    }
+        
+                    &> :nth-child(5) {
+                        width: 40px;
+                        height: 3px;
+                        background-color: white;
+                        opacity: 50%;
+                        transform: translate(479px, -36px) rotate(90deg);
+                    }
+                }
+            }
+
+            &> .button {
+                margin: 11px 0px 15px 0px;
+                align-self: center;
+    
+                &> button {
+                    height: 35px;
+                    width: 130px;
+                    background-color: var(--color-small-button);
+                    border: none;
+                    color: var(--color-form-background);
+                    font-size: .9em;
+                    font-weight: bolder;
+    
+                    &> a {
+                        height: 35px;
+                        width: 100px;
+                        color: var(--color-form-background);
+                        font-size: .9em;
+                        font-weight: bolder;
+                        text-decoration: none;
+                    }
+                }
+    
+                &> :nth-child(2) {
+                    width: 130px;
+                    height: 3px;
+                    background-color: black;
+                    opacity: 50%;
+                    transform: translate(0px, -3px);
+                }
+    
+                &> :nth-child(3) {
+                    width: 130px;
+                    height: 3px;
+                    background-color: white;
+                    opacity: 50%;
+                    transform: translate(0px, -38px);
+                }
+    
+                &> :nth-child(4) {
+                    width: 35px;
+                    height: 3px;
+                    background-color: black;
+                    opacity: 30%;
+                    transform: translate(-16px, -25px) rotate(90deg);
+                }
+    
+                &> :nth-child(5) {
+                    width: 35px;
+                    height: 3px;
+                    background-color: white;
+                    opacity: 50%;
+                    transform: translate(111px, -28px) rotate(90deg);
+                }
+            }
         }
     }
 

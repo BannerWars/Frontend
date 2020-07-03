@@ -9,26 +9,28 @@ export default function Lobbies() {
                     <p>You currently have # lobbies open.</p>
                 </div>
                 <div className="container">
-                    <div className="instance">
-                        <p>Lobby Name</p>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <div className="instance">
-                        <p>Lobby Name</p>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <div className="instance">
-                        <p>Lobby Name</p>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                    <div className="instances">
+                        <div className="instance">
+                            <p>Lobby Name</p>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div className="instance">
+                            <p>Lobby Name</p>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div className="instance">
+                            <p>Lobby Name</p>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
                     </div>
                     <div className="button">
                         <button><a href="/create-lobby">NEW LOBBY</a></button>

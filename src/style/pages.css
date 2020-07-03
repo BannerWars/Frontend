@@ -104,7 +104,7 @@
 .container > .content > .left > .buttons > .button > :nth-child(4) {
   width: 35px;
   height: 3px;
-  background-color: white;
+  background-color: black;
   opacity: 50%;
   -webkit-transform: translate(-16px, -25px) rotate(90deg);
           transform: translate(-16px, -25px) rotate(90deg);
@@ -113,7 +113,7 @@
 .container > .content > .left > .buttons > .button > :nth-child(5) {
   width: 35px;
   height: 3px;
-  background-color: black;
+  background-color: white;
   opacity: 50%;
   -webkit-transform: translate(111px, -28px) rotate(90deg);
           transform: translate(111px, -28px) rotate(90deg);
@@ -230,7 +230,7 @@
 .container > .auth > .button > :nth-child(4) {
   width: 35px;
   height: 3px;
-  background-color: white;
+  background-color: black;
   opacity: 50%;
   -webkit-transform: translate(-16px, -25px) rotate(90deg);
           transform: translate(-16px, -25px) rotate(90deg);
@@ -239,7 +239,7 @@
 .container > .auth > .button > :nth-child(5) {
   width: 35px;
   height: 3px;
-  background-color: black;
+  background-color: white;
   opacity: 50%;
   -webkit-transform: translate(331px, -28px) rotate(90deg);
           transform: translate(331px, -28px) rotate(90deg);
@@ -270,7 +270,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 800px;
+  width: 700px;
   -ms-flex-item-align: center;
       align-self: center;
 }
@@ -294,5 +294,144 @@
 
 .container > .page-content > .container {
   background-color: var(--color-form-background);
+  width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.container > .page-content > .container > .instances {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 25px;
+}
+
+.container > .page-content > .container > .instances > .instance {
+  margin: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 40px;
+  width: 500px;
+  background-color: var(--color-instances);
+  border: none;
+}
+
+.container > .page-content > .container > .instances > .instance > p {
+  color: var(--color-form-background);
+  font-size: .9em;
+  text-align: left;
+  -webkit-transform: translate(10px, -3px);
+          transform: translate(10px, -3px);
+  font-family: var(--font-hero-bold);
+}
+
+.container > .page-content > .container > .instances > .instance > :nth-child(2) {
+  width: 500px;
+  height: 3px;
+  background-color: black;
+  opacity: 50%;
+  -webkit-transform: translate(0px, -10px);
+          transform: translate(0px, -10px);
+}
+
+.container > .page-content > .container > .instances > .instance > :nth-child(3) {
+  width: 500px;
+  height: 3px;
+  background-color: white;
+  opacity: 50%;
+  -webkit-transform: translate(0px, -49px);
+          transform: translate(0px, -49px);
+}
+
+.container > .page-content > .container > .instances > .instance > :nth-child(4) {
+  width: 40px;
+  height: 3px;
+  background-color: black;
+  opacity: 50%;
+  -webkit-transform: translate(-19px, -34px) rotate(90deg);
+          transform: translate(-19px, -34px) rotate(90deg);
+}
+
+.container > .page-content > .container > .instances > .instance > :nth-child(5) {
+  width: 40px;
+  height: 3px;
+  background-color: white;
+  opacity: 50%;
+  -webkit-transform: translate(479px, -36px) rotate(90deg);
+          transform: translate(479px, -36px) rotate(90deg);
+}
+
+.container > .page-content > .container > .button {
+  margin: 11px 0px 15px 0px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.container > .page-content > .container > .button > button {
+  height: 35px;
+  width: 130px;
+  background-color: var(--color-small-button);
+  border: none;
+  color: var(--color-form-background);
+  font-size: .9em;
+  font-weight: bolder;
+}
+
+.container > .page-content > .container > .button > button > a {
+  height: 35px;
+  width: 100px;
+  color: var(--color-form-background);
+  font-size: .9em;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.container > .page-content > .container > .button > :nth-child(2) {
+  width: 130px;
+  height: 3px;
+  background-color: black;
+  opacity: 50%;
+  -webkit-transform: translate(0px, -3px);
+          transform: translate(0px, -3px);
+}
+
+.container > .page-content > .container > .button > :nth-child(3) {
+  width: 130px;
+  height: 3px;
+  background-color: white;
+  opacity: 50%;
+  -webkit-transform: translate(0px, -38px);
+          transform: translate(0px, -38px);
+}
+
+.container > .page-content > .container > .button > :nth-child(4) {
+  width: 35px;
+  height: 3px;
+  background-color: black;
+  opacity: 30%;
+  -webkit-transform: translate(-16px, -25px) rotate(90deg);
+          transform: translate(-16px, -25px) rotate(90deg);
+}
+
+.container > .page-content > .container > .button > :nth-child(5) {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  opacity: 50%;
+  -webkit-transform: translate(111px, -28px) rotate(90deg);
+          transform: translate(111px, -28px) rotate(90deg);
 }
 /*# sourceMappingURL=pages.css.map */
