@@ -15,6 +15,8 @@ import InviteFriends from "./pages/InviteFriends"
 import CreateTeam from "./pages/CreateTeam"
 import Lobbies from "./pages/Lobbies"
 import Lobby from "./pages/Lobby"
+import MyTeam from "./pages/MyTeam"
+import OtherTeam from "./pages/OtherTeam"
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
           <Route exact path="/lobbies" component={Lobbies} />
           <Route exact path="/create-lobby" component={CreateLobby} />
           <Route exact path="/lobby" component={Lobby} />
+          <Route exact path="/my-team" component={MyTeam} />
+          <Route exact path="/other-team" component={OtherTeam} />
           <Route exact path="/log-in" component={LogIn} />
           <Route exact path="/sign-up" component={SignUp} />
           <Route exact path="/forgot-password" component={ForgotPassword} />

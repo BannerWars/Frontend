@@ -536,6 +536,183 @@
           transform: translate(111px, -28px) rotate(90deg);
 }
 
+.container > .page-content > .members > .header, .container > .page-content .banners > .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+}
+
+.container > .page-content > .members > .header > h2, .container > .page-content .banners > .header > h2 {
+  font-family: var(--font-hero);
+  font-size: 1.7em;
+  margin: 0px;
+}
+
+.container > .page-content > .members > .container, .container > .page-content .banners > .container {
+  background-color: var(--color-form-background);
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  margin-top: 0;
+  padding-bottom: 12px;
+}
+
+.container > .page-content > .members > .container > .instances, .container > .page-content .banners > .container > .instances {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 25px;
+}
+
+.container > .page-content > .members > .container > .instances > a, .container > .page-content .banners > .container > .instances > a {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 60px;
+  width: 200px;
+  margin-bottom: 30px;
+}
+
+.container > .page-content > .members > .container > .instances > a > button, .container > .page-content .banners > .container > .instances > a > button {
+  height: 60px;
+  width: 200px;
+  margin: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-color: var(--color-instances);
+  border: none;
+}
+
+.container > .page-content > .members > .container > .instances > a > button > p, .container > .page-content .banners > .container > .instances > a > button > p {
+  color: var(--color-form-background);
+  font-size: 1.2em;
+  text-align: left;
+  -webkit-transform: translate(10px, 4px);
+          transform: translate(10px, 4px);
+  font-family: var(--font-hero-bold);
+}
+
+.container > .page-content > .members > .container > .instances > a > button > :nth-child(2), .container > .page-content .banners > .container > .instances > a > button > :nth-child(2) {
+  width: 200px;
+  height: 3px;
+  background-color: black;
+  opacity: 50%;
+  -webkit-transform: translate(-6px, 5px);
+          transform: translate(-6px, 5px);
+}
+
+.container > .page-content > .members > .container > .instances > a > button > :nth-child(3), .container > .page-content .banners > .container > .instances > a > button > :nth-child(3) {
+  width: 200px;
+  height: 3px;
+  background-color: white;
+  opacity: 50%;
+  -webkit-transform: translate(-6px, -55px);
+          transform: translate(-6px, -55px);
+}
+
+.container > .page-content > .members > .container > .instances > a > button > :nth-child(4), .container > .page-content .banners > .container > .instances > a > button > :nth-child(4) {
+  width: 60px;
+  height: 3px;
+  background-color: black;
+  opacity: 50%;
+  -webkit-transform: translate(-35px, -30px) rotate(90deg);
+          transform: translate(-35px, -30px) rotate(90deg);
+}
+
+.container > .page-content > .members > .container > .instances > a > button > :nth-child(5), .container > .page-content .banners > .container > .instances > a > button > :nth-child(5) {
+  width: 60px;
+  height: 3px;
+  background-color: white;
+  opacity: 50%;
+  -webkit-transform: translate(163px, -32.5px) rotate(90deg);
+          transform: translate(163px, -32.5px) rotate(90deg);
+}
+
+.container > .page-content > .members > .container > .button, .container > .page-content .banners > .container > .button {
+  margin: 11px 0px 15px 0px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.container > .page-content > .members > .container > .button > button, .container > .page-content .banners > .container > .button > button {
+  height: 35px;
+  width: 130px;
+  background-color: var(--color-small-button);
+  border: none;
+  color: var(--color-form-background);
+  font-size: .9em;
+  font-weight: bolder;
+}
+
+.container > .page-content > .members > .container > .button > button > a, .container > .page-content .banners > .container > .button > button > a {
+  height: 35px;
+  width: 100px;
+  color: var(--color-form-background);
+  font-size: .9em;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.container > .page-content > .members > .container > .button > :nth-child(2), .container > .page-content .banners > .container > .button > :nth-child(2) {
+  width: 130px;
+  height: 3px;
+  background-color: black;
+  opacity: 50%;
+  -webkit-transform: translate(0px, -3px);
+          transform: translate(0px, -3px);
+}
+
+.container > .page-content > .members > .container > .button > :nth-child(3), .container > .page-content .banners > .container > .button > :nth-child(3) {
+  width: 130px;
+  height: 3px;
+  background-color: white;
+  opacity: 50%;
+  -webkit-transform: translate(0px, -38px);
+          transform: translate(0px, -38px);
+}
+
+.container > .page-content > .members > .container > .button > :nth-child(4), .container > .page-content .banners > .container > .button > :nth-child(4) {
+  width: 35px;
+  height: 3px;
+  background-color: black;
+  opacity: 30%;
+  -webkit-transform: translate(-16px, -25px) rotate(90deg);
+          transform: translate(-16px, -25px) rotate(90deg);
+}
+
+.container > .page-content > .members > .container > .button > :nth-child(5), .container > .page-content .banners > .container > .button > :nth-child(5) {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  opacity: 50%;
+  -webkit-transform: translate(111px, -28px) rotate(90deg);
+          transform: translate(111px, -28px) rotate(90deg);
+}
+
+.container > .page-content > .banner > img {
+  height: 400px;
+}
+
 .container > .center {
   display: -webkit-box;
   display: -ms-flexbox;

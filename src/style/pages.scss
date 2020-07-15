@@ -439,6 +439,156 @@
                 }
             }
         }
+
+        &> .members, .banners {
+
+            &> .header {
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+    
+                &> h2 {
+                    font-family: var(--font-hero);
+                    font-size: 1.7em;
+                    margin: 0px;
+                }
+            }
+    
+            &> .container {
+                background-color: var(--color-form-background);
+                width: 350px;
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+                transform: translateX(-50px);
+                margin-top: 0;
+                padding-bottom: 12px;
+    
+                &> .instances {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 25px;
+    
+                    &> a {
+                        align-self: center;
+                        height: 60px;
+                        width: 200px;
+                        margin-bottom: 30px;
+    
+                        &> button {
+                            height: 60px;
+                            width: 200px;
+                            margin: 10px;
+                            align-self: center;
+                            background-color: var(--color-instances);
+                            border: none;
+                            
+                            &> p {
+                                color: var(--color-form-background);
+                                font-size: 1.2em;
+                                text-align: left;
+                                transform: translate(10px, 4px);
+                                font-family: var(--font-hero-bold);
+                            }
+                
+                            &> :nth-child(2) {
+                                width: 200px;
+                                height: 3px;
+                                background-color: black;
+                                opacity: 50%;
+                                transform: translate(-6px, 5px);
+                            }
+                
+                            &> :nth-child(3) {
+                                width: 200px;
+                                height: 3px;
+                                background-color: white;
+                                opacity: 50%;
+                                transform: translate(-6px, -55px);
+                            }
+                
+                            &> :nth-child(4) {
+                                width: 60px;
+                                height: 3px;
+                                background-color: black;
+                                opacity: 50%;
+                                transform: translate(-35px, -30px) rotate(90deg);
+                            }
+                
+                            &> :nth-child(5) {
+                                width: 60px;
+                                height: 3px;
+                                background-color: white;
+                                opacity: 50%;
+                                transform: translate(163px, -32.5px) rotate(90deg);
+                            }
+                        } 
+                    }
+                }
+    
+                &> .button {
+                    margin: 11px 0px 15px 0px;
+                    align-self: center;
+        
+                    &> button {
+                        height: 35px;
+                        width: 130px;
+                        background-color: var(--color-small-button);
+                        border: none;
+                        color: var(--color-form-background);
+                        font-size: .9em;
+                        font-weight: bolder;
+        
+                        &> a {
+                            height: 35px;
+                            width: 100px;
+                            color: var(--color-form-background);
+                            font-size: .9em;
+                            font-weight: bolder;
+                            text-decoration: none;
+                        }
+                    }
+        
+                    &> :nth-child(2) {
+                        width: 130px;
+                        height: 3px;
+                        background-color: black;
+                        opacity: 50%;
+                        transform: translate(0px, -3px);
+                    }
+        
+                    &> :nth-child(3) {
+                        width: 130px;
+                        height: 3px;
+                        background-color: white;
+                        opacity: 50%;
+                        transform: translate(0px, -38px);
+                    }
+        
+                    &> :nth-child(4) {
+                        width: 35px;
+                        height: 3px;
+                        background-color: black;
+                        opacity: 30%;
+                        transform: translate(-16px, -25px) rotate(90deg);
+                    }
+        
+                    &> :nth-child(5) {
+                        width: 35px;
+                        height: 3px;
+                        background-color: white;
+                        opacity: 50%;
+                        transform: translate(111px, -28px) rotate(90deg);
+                    }
+                }
+            }
+        }
+
+        & > .banner {
+            &> img {
+                height: 400px;
+            }
+        }
  
     }
     
