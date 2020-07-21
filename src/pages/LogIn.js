@@ -11,6 +11,7 @@ export default class LogIn extends Component {
             redirect: false, 
             email: "",
             password: "",
+            error: "",
         }
     }
     login() {
@@ -25,8 +26,13 @@ export default class LogIn extends Component {
         })
         .then(res => res.json())
         .then(json => {
-            console.log(json)
-            this.setState({redirect: true})
+            if (json.message) {
+                this.setState({error: json.message})
+            }
+            else {
+                localStorage.setItem("bannerWarsToken", json.token)
+                this.setState({redirect: true})
+            }
         })
     }
     render () {
@@ -50,7 +56,10 @@ export default class LogIn extends Component {
                         <div></div>
                         <div></div>
                     </div>
+                    {this.state.error && 
+                    <div><p>{this.state.error}</p></div>}
                 </div>
+                {this.state.redirect && <Redirect to="/" />}
             </div>
         )
     }
