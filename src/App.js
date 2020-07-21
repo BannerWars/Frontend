@@ -17,6 +17,7 @@ import Lobbies from "./pages/Lobbies"
 import Lobby from "./pages/Lobby"
 import MyTeam from "./pages/MyTeam"
 import OtherTeam from "./pages/OtherTeam"
+import LogOut from "./pages/LogOut"
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
           <Route exact path="/reset-password" component={ResetPassword} />
           <Route exact path="/invite-friends" component={InviteFriends} />
           <Route exact path="/create-team" component={CreateTeam} />
+          <Route exact path="/log-out" component={LogOut} />
         </Switch>
         <Footer />
       </div>

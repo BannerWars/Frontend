@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import {Redirect} from 'react-router-dom'
 
 import "../style/pages.css"
 
@@ -8,7 +7,6 @@ export default class LogIn extends Component {
         super(props)
 
         this.state = {
-            redirect: false, 
             email: "",
             password: "",
             error: "",
@@ -31,7 +29,7 @@ export default class LogIn extends Component {
             }
             else {
                 localStorage.setItem("bannerWarsToken", json.token)
-                this.setState({redirect: true})
+                window.location.href = "/"
             }
         })
     }
@@ -59,7 +57,6 @@ export default class LogIn extends Component {
                     {this.state.error && 
                     <div><p>{this.state.error}</p></div>}
                 </div>
-                {this.state.redirect && <Redirect to="/" />}
             </div>
         )
     }
