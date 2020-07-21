@@ -35,7 +35,7 @@ function App() {
           <Route exact path="/log-in" component={LogIn} />
           <Route exact path="/sign-up" component={SignUp} />
           <Route exact path="/forgot-password" component={ForgotPassword} />
-          <Route exact path="/verification" component={Verification} />
+          <Route exact path="/verify/:id" component={Verification} />
           <Route exact path="/reset-password" component={ResetPassword} />
           <Route exact path="/invite-friends" component={InviteFriends} />
           <Route exact path="/create-team" component={CreateTeam} />
