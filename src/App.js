@@ -18,6 +18,7 @@ import Lobby from "./pages/Lobby"
 import MyTeam from "./pages/MyTeam"
 import OtherTeam from "./pages/OtherTeam"
 import LogOut from "./pages/LogOut"
+import CheckEmail from "./pages/CheckEmail"
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
           <Route exact path="/invite-friends" component={InviteFriends} />
           <Route exact path="/create-team" component={CreateTeam} />
           <Route exact path="/log-out" component={LogOut} />
+          <Route exact path="/check-email" component={CheckEmail} />
         </Switch>
         <Footer />
       </div>
