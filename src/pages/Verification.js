@@ -1,28 +1,44 @@
-import React, {useEffect, useState} from 'react'
-import {Link, useParams} from 'react-router-dom'
+import React, { Component } from 'react'
+import { Link, useParams } from 'react-router-dom'
 
-export default function Verification() {
-    let {id} = useParams()
-    const [error, setError] = useState("")
-    useEffect(() => {
+import "../style/pages.css"
+
+export default class Verification extends Component {
+    constructor(props) {
+        super(props)
+
+        
+        this.state = {
+            id: props.match.params.id,
+            message: "",
+        }
+    }
+
+    componentDidMount() {
+        this.verify()
+    }
+
+    verify() {
         const path = process.env.REACT_APP_BACKEND + "/users/verify/"
-        console.log(path)
         fetch(path, {
-            method : "POST", 
-            headers : {"Content-Type" : "application/json"},
-            body : JSON.stringify({userId: id})
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ userId: this.state.id })
         })
-        .then(res => res.json())
-        .then(json => {
-            setError(json.message)
-        })
-    })
-    return (
-        <div className="container">
+            .then(res => res.json())
+            .then(json => {
+                this.setState({ message: json.message })
+            })
+    }
 
-            <h1 id="verification">Welcome to Banner Wars!</h1>
-            <p>{error}</p>
-            <Link to="/log-in" id="log-in">Log In</Link>
-        </div>
-    )
+    render() {
+        return (
+            <div className="container">
+
+                <h1 id="verification">Welcome to Banner Wars!</h1>
+                <p>{this.state.message}</p>
+                <Link to="/log-in" id="log-in">Log In</Link>
+            </div>
+        )
+    }
 }

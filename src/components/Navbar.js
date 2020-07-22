@@ -21,7 +21,7 @@ export default function Navbar() {
     })
     return (
         <nav>
-            <img src="./images/Grid.svg" alt="grid"/>
+            <img src="images/Grid.svg" alt="grid"/>
             <div className="content">
                 <div className="logo">
                     <a href="/">
