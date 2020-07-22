@@ -18,7 +18,7 @@ export default function Navbar() {
         if (token) {
             setAuth(true)
         }
-    })
+    }, [])
     return (
         <nav>
             <img src="images/Grid.svg" alt="grid"/>

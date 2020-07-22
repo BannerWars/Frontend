@@ -3,7 +3,7 @@ import React from "react"
 function Instance(props) {
     const { link, text } = props.instance
     return (<>
-            <a href={link}>
+            <a href={`lobbies/${link}`}>
                 <button className="instance">
                     <p>{text}</p>
                     <div></div>
