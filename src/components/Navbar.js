@@ -18,10 +18,10 @@ export default function Navbar() {
         if (token) {
             setAuth(true)
         }
-    })
+    }, [])
     return (
         <nav>
-            <img src="./images/Grid.svg" alt="grid"/>
+            <img src="images/Grid.svg" alt="grid"/>
             <div className="content">
                 <div className="logo">
                     <a href="/">
