@@ -27,24 +27,6 @@ export default function Lobbies() {
                 <div className="container">
                     <div className="instances">
                         {instances.map((instance) => <Instance instance={instance}/>)}
-                        {/* <a href="/lobby">
-                            <button className="instance">
-                                <p>Lobby Name</p>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </button>
-                        </a>
-                        <a href="/lobby">
-                            <button className="instance">
-                                <p>Lobby Name</p>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </button>
-                        </a> */}
                     </div>
                     <div className="button">
                         <button><a href="/create-lobby">NEW LOBBY</a></button>
