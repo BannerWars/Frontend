@@ -1,4 +1,35 @@
 import React from 'react'
+import Instance from '../components/Instance';
+
+const user_instances = [
+    {
+        link: "/invite-friends",
+        text: "User Name",
+    },
+    {
+        link: "/invite-friends",
+        text: "User Name",
+    },
+    {
+        link: "/invite-friends",
+        text: "User Name",
+    }
+]
+
+const instances = [
+    {
+        link: "/lobby",
+        text: "Team Name",
+    },
+    {
+        link: "/lobby",
+        text: "Team Name",
+    },
+    {
+        link: "/lobby",
+        text: "Team Name",
+    }
+]
 
 export default function MyTeam() {
     return (
@@ -12,7 +43,8 @@ export default function MyTeam() {
                     </div>
                     <div className="container">
                         <div className="instances">
-                            <a href="/invite-friends">
+                            {user_instances.map((instance) => <Instance instance={instance}/>)}
+                            {/* <a href="/invite-friends">
                                 <button className="instance">
                                     <p>User Name</p>
                                     <div></div>
@@ -38,7 +70,7 @@ export default function MyTeam() {
                                     <div></div>
                                     <div></div>
                                 </button>
-                            </a>
+                            </a> */}
                         </div>
                         <div className="button">
                             <button><a href="/invite-friends">INVITE FRIENDS</a></button>
@@ -50,42 +82,43 @@ export default function MyTeam() {
                     </div>
                 </div>
                 <div className="banners">
-                <div className="header">
-                        <h2>Members</h2>
-                        <p>There are currently # members.</p>
-                    </div>
-                    <div className="container">
-                        <div className="instances">
-                            <a href="/lobby">
-                                <button className="instance">
-                                    <p>Team Name</p>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                </button>
-                            </a>
-                            <a href="/lobby">
-                                <button className="instance">
-                                    <p>Team Name</p>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                </button>
-                            </a>
-                            <a href="/lobby">
-                                <button className="instance">
-                                    <p>Team Name</p>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                </button>
-                            </a>
+                    <div className="header">
+                            <h2>Banners</h2>
+                            <p>There are currently # banners.</p>
+                        </div>
+                        <div className="container">
+                            <div className="instances">
+                                {instances.map((instance) => <Instance instance={instance}/>)}
+                                {/* <a href="/lobby">
+                                    <button className="instance">
+                                        <p>Team Name</p>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </button>
+                                </a>
+                                <a href="/lobby">
+                                    <button className="instance">
+                                        <p>Team Name</p>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </button>
+                                </a>
+                                <a href="/lobby">
+                                    <button className="instance">
+                                        <p>Team Name</p>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </button>
+                                </a> */}
+                            </div>
                         </div>
                     </div>
-                </div>
                 <div className="banner">
                     <img src="images/banner.png" alt="banner"/>
                 </div>

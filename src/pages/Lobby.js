@@ -1,4 +1,20 @@
 import React from 'react'
+import Instance from '../components/Instance';
+
+const instances = [
+    {
+        link: "/lobby",
+        text: "Team Name",
+    },
+    {
+        link: "/lobby",
+        text: "Team Name",
+    },
+    {
+        link: "/lobby",
+        text: "Team Name",
+    }
+]
 
 export default function Lobby() {
     return (
@@ -12,7 +28,8 @@ export default function Lobby() {
                     </div>
                     <div className="container">
                         <div className="instances">
-                            <a href="/lobby">
+                            {instances.map((instance) => <Instance instance={instance}/>)}
+                            {/* <a href="/lobby">
                                 <button className="instance">
                                     <p>Team Name</p>
                                     <div></div>
@@ -38,7 +55,7 @@ export default function Lobby() {
                                     <div></div>
                                     <div></div>
                                 </button>
-                            </a>
+                            </a> */}
                         </div>
                         <div className="button">
                             <button><a href="/create-lobby">NEW TEAM</a></button>
