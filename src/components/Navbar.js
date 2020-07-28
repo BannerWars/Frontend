@@ -24,9 +24,9 @@ export default function Navbar() {
             <img src={require("../images/Grid.svg")} alt="grid"/>
             <div className="content">
                 <div className="logo">
-                    <a href="/">
+                    <Link to="/">
                         <h1>Banner Wars</h1>   
-                    </a>             
+                    </Link>             
                 </div>
                 <ul className="nav_buttons">
                     { 

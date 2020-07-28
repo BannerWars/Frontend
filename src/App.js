@@ -38,7 +38,7 @@ function App() {
           <Route exact path="/verify/:id" component={Verification} />
           <Route exact path="/reset-password" component={ResetPassword} />
           <Route exact path="/invite-friends" component={InviteFriends} />
-          <Route exact path="/create-team" component={CreateTeam} />
+          <Route exact path="/create-team/:id" component={CreateTeam} />
           <Route exact path="/log-out" component={LogOut} />
           <Route exact path="/check-email" component={CheckEmail} />
         </Switch>

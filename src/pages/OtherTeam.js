@@ -1,5 +1,5 @@
 import React from 'react'
-import Instance from '../components/Instance';
+import LobbyInstance from '../components/LobbyInstance';
 
 const user_instances = [
     {
@@ -43,7 +43,7 @@ export default function OtherTeam() {
                     </div>
                     <div className="container">
                         <div className="instances">
-                            {user_instances.map((instance) => <Instance instance={instance}/>)}
+                            {user_instances.map((instance) => <LobbyInstance instance={instance}/>)}
                             {/* <a href="/invite-friends">
                                 <button className="instance">
                                     <p>User Name</p>
@@ -81,7 +81,7 @@ export default function OtherTeam() {
                     </div>
                     <div className="container">
                         <div className="instances">
-                            {instances.map((instance) => <Instance instance={instance}/>)}
+                            {instances.map((instance) => <LobbyInstance instance={instance}/>)}
                             {/* <a href="/lobby">
                                 <button className="instance">
                                     <p>Team Name</p>

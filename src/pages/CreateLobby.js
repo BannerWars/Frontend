@@ -47,7 +47,7 @@ export default function CreateLobby() {
                     <div></div>
                 </div>
             </div>
-            {redirect && <Redirect to={`/lobbies/${id}`}/>}
+            {redirect && <Redirect to={`/lobbies/`}/>}
         </div>
     )
 }

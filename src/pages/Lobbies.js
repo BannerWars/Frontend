@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Instance from '../components/Instance';
+import LobbyInstance from '../components/LobbyInstance';
 
 import { Redirect, Link } from "react-router-dom"
 
@@ -44,8 +44,7 @@ export default class Lobbies extends Component {
         })
         .then(res => res.json())
         .then(json => {
-            const lobbies = json.map(item => {return {link: item._id, text: item.name}})
-
+            const lobbies = json.map(item => {return {link: `/lobbies/${item._id}`, text: item.name}})
             this.setState({lobbies})
         })
     }
@@ -62,7 +61,7 @@ export default class Lobbies extends Component {
                     </div>
                     <div className="container">
                         <div className="instances">
-                            {this.state.lobbies.map((instance) => <Instance instance={instance} key />)}
+                            {this.state.lobbies.map((instance) => <LobbyInstance instance={instance} key />)}
                             {/* <a href="/lobby">
                             <button className="instance">
                                 <p>Lobby Name</p>

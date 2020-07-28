@@ -1,22 +1,29 @@
 import React from 'react'
-import Instance from '../components/Instance';
+import LobbyInstance from '../components/LobbyInstance';
+import { useState, useEffect } from 'react';
+import { useParams, Link } from 'react-router-dom';
 
-const instances = [
-    {
-        link: "/lobby",
-        text: "Team Name",
-    },
-    {
-        link: "/lobby",
-        text: "Team Name",
-    },
-    {
-        link: "/lobby",
-        text: "Team Name",
-    }
-]
+
+function getLobby(lobbyId, setLobby) {
+    const path = process.env.REACT_APP_BACKEND + `/lobby/single/${lobbyId}`
+    
+    fetch(path)
+    .then(res => res.json())
+    .then(json => {
+        setLobby(json)
+        
+    })
+
+
+}
 
 export default function Lobby() {
+    const [lobby, setLobby] = useState({})
+    const {id} = useParams()
+
+    useEffect(() => {
+        getLobby(id, setLobby)
+    }, [])
     return (
         <div className="container">
             <h1>Lobby Name</h1>
@@ -28,37 +35,11 @@ export default function Lobby() {
                     </div>
                     <div className="container">
                         <div className="instances">
-                            {instances.map((instance) => <Instance instance={instance}/>)}
-                            {/* <a href="/lobby">
-                                <button className="instance">
-                                    <p>Team Name</p>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                </button>
-                            </a>
-                            <a href="/lobby">
-                                <button className="instance">
-                                    <p>Team Name</p>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                </button>
-                            </a>
-                            <a href="/lobby">
-                                <button className="instance">
-                                    <p>Team Name</p>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                </button>
-                            </a> */}
+                            {lobby.teams && lobby.teams.map((instance) => <LobbyInstance instance={{text: instance.name, link: `${id}/${instance._id}`}}/>)}
+                      
                         </div>
                         <div className="button">
-                            <button><a href="/create-lobby">NEW TEAM</a></button>
+                            <button><Link to={`/create-team/${id}`}>NEW TEAM</Link></button>
                             <div></div>
                             <div></div>
                             <div></div>
@@ -71,7 +52,7 @@ export default function Lobby() {
                         <p>Not enough people in your lobby? Invite more!</p>
                     </div>
                     <div className="button">
-                        <button><a href="/invite-friends">INVITE FRIENDS</a></button>
+                        <button><Link href="/invite-friends">INVITE FRIENDS</Link></button>
                         <div></div>
                         <div></div>
                         <div></div>
