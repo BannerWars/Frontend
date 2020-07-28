@@ -27,28 +27,6 @@ export default class Lobbies extends Component {
             redirect: false,
         }
     }
-<<<<<<< HEAD
-]
-
-export default function Lobbies() {
-    return (
-        <div className="container">
-            <div className="center">
-                <div className="header">
-                    <h2>Lobbies</h2>
-                    <p>You currently have # lobbies open.</p>
-                </div>
-                <div className="container">
-                    <div className="instances">
-                        {instances.map((instance) => <Instance instance={instance}/>)}
-                    </div>
-                    <div className="button">
-                        <button><a href="/create-lobby">NEW LOBBY</a></button>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-=======
 
     componentDidMount() {
         if(localStorage.getItem("bannerWarsToken")){ 
@@ -111,7 +89,6 @@ export default function Lobbies() {
                             <div></div>
                             <div></div>
                         </div>
->>>>>>> 633c5c507a6726b2d8af7bd30f0121c33cc80db4
                     </div>
                 </div>
                 {this.state.redirect && <Redirect to="/" />}
