@@ -28,8 +28,8 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/lobbies" component={Lobbies} />
-          <Route exact path="/create-lobby" component={CreateLobby} />
-          <Route exact path="/lobby" component={Lobby} />
+          <Route exact path="/create-lobby/" component={CreateLobby} />
+          <Route exact path="/lobbies/:id" component={Lobby} />
           <Route exact path="/my-team" component={MyTeam} />
           <Route exact path="/other-team" component={OtherTeam} />
           <Route exact path="/log-in" component={LogIn} />

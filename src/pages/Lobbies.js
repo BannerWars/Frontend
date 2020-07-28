@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Instance from '../components/Instance';
 
-import { Redirect } from "react-router-dom"
+import { Redirect, Link } from "react-router-dom"
 
 // const instances = [
 //     {
@@ -50,6 +50,8 @@ export default class Lobbies extends Component {
         })
     }
 
+    
+
     render() {
         return (
             <div className="container">
@@ -81,7 +83,7 @@ export default class Lobbies extends Component {
                         </a> */}
                         </div>
                         <div className="button">
-                            <button><a href="/create-lobby">NEW LOBBY</a></button>
+                            <button><Link to="/create-lobby">NEW LOBBY</Link></button>
                             <div></div>
                             <div></div>
                             <div></div>
