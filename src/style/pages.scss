@@ -469,7 +469,7 @@
                     flex-direction: column;
                     margin-top: 25px;
     
-                    &> a {
+                    &> a, &> div {
                         align-self: center;
                         height: 60px;
                         width: 200px;
@@ -538,8 +538,12 @@
                         color: var(--color-form-background);
                         font-size: .9em;
                         font-weight: bolder;
+
+                        &> div {
+                            font-family: var(--font-hero-bold);
+                        }
         
-                        &> a {
+                        &> a{
                             height: 35px;
                             width: 100px;
                             color: var(--color-form-background);
@@ -622,7 +626,7 @@
                 flex-direction: column;
                 margin-top: 25px;
 
-                &> a {
+                &> a,  &> div {
                     align-self: center;
                     height: 40px;
                     width: 500px;

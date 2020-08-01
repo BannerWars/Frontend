@@ -57,7 +57,7 @@ export default class Lobbies extends Component {
                 <div className="center">
                     <div className="header">
                         <h2>Lobbies</h2>
-                        <p>You currently have # lobbies open.</p>
+                        <p>You currently have {this.state.lobbies.length} {this.state.lobbies.length == 1? "lobby" : "lobbies"} open.</p>
                     </div>
                     <div className="container">
                         <div className="instances">

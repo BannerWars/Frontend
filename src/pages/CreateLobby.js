@@ -2,7 +2,7 @@ import React from 'react'
 
 import "../style/pages.css"
 import { useState } from 'react'
-import { Redirect, useParams } from 'react-router-dom'
+import { Redirect } from 'react-router-dom'
 
 function createLobby(lobbyName, setRedirect) {
     const path = process.env.REACT_APP_BACKEND + "/lobby/new/"
@@ -30,7 +30,6 @@ function createLobby(lobbyName, setRedirect) {
 export default function CreateLobby() {
     const [redirect, setRedirect] = useState(false)
     const [lobbyName, setLobbyName] = useState("")
-    const {id} = useParams()
     return (
         <div className="container">
             <div className="auth">

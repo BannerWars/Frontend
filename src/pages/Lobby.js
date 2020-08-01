@@ -23,7 +23,7 @@ export default function Lobby() {
 
     useEffect(() => {
         getLobby(id, setLobby)
-    }, [])
+    }, [id])
     return (
         <div className="container">
             <h1>Lobby Name</h1>
@@ -31,11 +31,11 @@ export default function Lobby() {
                 <div className="left">
                     <div className="header">
                         <h2>Teams</h2>
-                        <p>There are currently # teams.</p>
+                        <p>There {lobby.teams && `${lobby.teams.length != 1 ? "are" : "is"} currently ${lobby.teams.length} team${lobby.teams.length != 1 ? "s" : ""}`}.</p>
                     </div>
                     <div className="container">
                         <div className="instances">
-                            {lobby.teams && lobby.teams.map((instance) => <LobbyInstance instance={{text: instance.name, link: `${id}/${instance._id}`}}/>)}
+                            {lobby.teams && lobby.teams.map((instance, i) => <LobbyInstance instance={{text: instance.name, link: `${id}/${i}`}}/>)}
                       
                         </div>
                         <div className="button">

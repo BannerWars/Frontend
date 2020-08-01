@@ -582,7 +582,7 @@
   margin-top: 25px;
 }
 
-.container > .page-content > .members > .container > .instances > a, .container > .page-content .banners > .container > .instances > a {
+.container > .page-content > .members > .container > .instances > a, .container > .page-content > .members > .container > .instances > div, .container > .page-content .banners > .container > .instances > a, .container > .page-content .banners > .container > .instances > div {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -591,7 +591,7 @@
   margin-bottom: 30px;
 }
 
-.container > .page-content > .members > .container > .instances > a > button, .container > .page-content .banners > .container > .instances > a > button {
+.container > .page-content > .members > .container > .instances > a > button, .container > .page-content > .members > .container > .instances > div > button, .container > .page-content .banners > .container > .instances > a > button, .container > .page-content .banners > .container > .instances > div > button {
   height: 60px;
   width: 200px;
   margin: 10px;
@@ -602,7 +602,7 @@
   border: none;
 }
 
-.container > .page-content > .members > .container > .instances > a > button > p, .container > .page-content .banners > .container > .instances > a > button > p {
+.container > .page-content > .members > .container > .instances > a > button > p, .container > .page-content > .members > .container > .instances > div > button > p, .container > .page-content .banners > .container > .instances > a > button > p, .container > .page-content .banners > .container > .instances > div > button > p {
   color: var(--color-form-background);
   font-size: 1.2em;
   text-align: left;
@@ -611,7 +611,7 @@
   font-family: var(--font-hero-bold);
 }
 
-.container > .page-content > .members > .container > .instances > a > button > :nth-child(2), .container > .page-content .banners > .container > .instances > a > button > :nth-child(2) {
+.container > .page-content > .members > .container > .instances > a > button > :nth-child(2), .container > .page-content > .members > .container > .instances > div > button > :nth-child(2), .container > .page-content .banners > .container > .instances > a > button > :nth-child(2), .container > .page-content .banners > .container > .instances > div > button > :nth-child(2) {
   width: 200px;
   height: 3px;
   background-color: black;
@@ -620,7 +620,7 @@
           transform: translate(-6px, 5px);
 }
 
-.container > .page-content > .members > .container > .instances > a > button > :nth-child(3), .container > .page-content .banners > .container > .instances > a > button > :nth-child(3) {
+.container > .page-content > .members > .container > .instances > a > button > :nth-child(3), .container > .page-content > .members > .container > .instances > div > button > :nth-child(3), .container > .page-content .banners > .container > .instances > a > button > :nth-child(3), .container > .page-content .banners > .container > .instances > div > button > :nth-child(3) {
   width: 200px;
   height: 3px;
   background-color: white;
@@ -629,7 +629,7 @@
           transform: translate(-6px, -55px);
 }
 
-.container > .page-content > .members > .container > .instances > a > button > :nth-child(4), .container > .page-content .banners > .container > .instances > a > button > :nth-child(4) {
+.container > .page-content > .members > .container > .instances > a > button > :nth-child(4), .container > .page-content > .members > .container > .instances > div > button > :nth-child(4), .container > .page-content .banners > .container > .instances > a > button > :nth-child(4), .container > .page-content .banners > .container > .instances > div > button > :nth-child(4) {
   width: 60px;
   height: 3px;
   background-color: black;
@@ -638,7 +638,7 @@
           transform: translate(-35px, -30px) rotate(90deg);
 }
 
-.container > .page-content > .members > .container > .instances > a > button > :nth-child(5), .container > .page-content .banners > .container > .instances > a > button > :nth-child(5) {
+.container > .page-content > .members > .container > .instances > a > button > :nth-child(5), .container > .page-content > .members > .container > .instances > div > button > :nth-child(5), .container > .page-content .banners > .container > .instances > a > button > :nth-child(5), .container > .page-content .banners > .container > .instances > div > button > :nth-child(5) {
   width: 60px;
   height: 3px;
   background-color: white;
@@ -662,6 +662,10 @@
   color: var(--color-form-background);
   font-size: .9em;
   font-weight: bolder;
+}
+
+.container > .page-content > .members > .container > .button > button > div, .container > .page-content .banners > .container > .button > button > div {
+  font-family: var(--font-hero-bold);
 }
 
 .container > .page-content > .members > .container > .button > button > a, .container > .page-content .banners > .container > .button > button > a {
@@ -768,7 +772,7 @@
   margin-top: 25px;
 }
 
-.container > .center > .container > .instances > a {
+.container > .center > .container > .instances > a, .container > .center > .container > .instances > div {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -777,7 +781,7 @@
   margin-bottom: 10px;
 }
 
-.container > .center > .container > .instances > a > button {
+.container > .center > .container > .instances > a > button, .container > .center > .container > .instances > div > button {
   height: 40px;
   width: 500px;
   margin: 10px;
@@ -790,7 +794,7 @@
   border: none;
 }
 
-.container > .center > .container > .instances > a > button > p {
+.container > .center > .container > .instances > a > button > p, .container > .center > .container > .instances > div > button > p {
   color: var(--color-form-background);
   font-size: 1.2em;
   text-align: left;
@@ -799,7 +803,7 @@
   font-family: var(--font-hero-bold);
 }
 
-.container > .center > .container > .instances > a > button > :nth-child(2) {
+.container > .center > .container > .instances > a > button > :nth-child(2), .container > .center > .container > .instances > div > button > :nth-child(2) {
   width: 500px;
   height: 3px;
   background-color: black;
@@ -808,7 +812,7 @@
           transform: translate(-6px, -15px);
 }
 
-.container > .center > .container > .instances > a > button > :nth-child(3) {
+.container > .center > .container > .instances > a > button > :nth-child(3), .container > .center > .container > .instances > div > button > :nth-child(3) {
   width: 500px;
   height: 3px;
   background-color: white;
@@ -817,7 +821,7 @@
           transform: translate(-6px, -55px);
 }
 
-.container > .center > .container > .instances > a > button > :nth-child(4) {
+.container > .center > .container > .instances > a > button > :nth-child(4), .container > .center > .container > .instances > div > button > :nth-child(4) {
   width: 40px;
   height: 3px;
   background-color: black;
@@ -826,7 +830,7 @@
           transform: translate(-25px, -40px) rotate(90deg);
 }
 
-.container > .center > .container > .instances > a > button > :nth-child(5) {
+.container > .center > .container > .instances > a > button > :nth-child(5), .container > .center > .container > .instances > div > button > :nth-child(5) {
   width: 40px;
   height: 3px;
   background-color: white;
