@@ -15,6 +15,10 @@
   font-family: var(--font-hero-bold);
 }
 
+.container > h1 > a {
+  color: var(--color-font);
+}
+
 .container > p {
   font-size: 1.1em;
 }

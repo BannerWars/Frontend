@@ -26,7 +26,7 @@ export default function Lobby() {
     }, [id])
     return (
         <div className="container">
-            <h1>Lobby Name</h1>
+            <h1>{lobby.name? lobby.name : "Lobby Name"}</h1>
             <div className="page-content">
                 <div className="left">
                     <div className="header">

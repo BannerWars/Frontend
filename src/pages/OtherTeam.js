@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import LobbyInstance from '../components/LobbyInstance'
 import BannerInstance from '../components/BannerInstance'
-import { useParams } from "react-router-dom"
+import { useParams, Link } from "react-router-dom"
 import { confirmAlert } from "react-confirm-alert"
 import 'react-confirm-alert/src/react-confirm-alert.css'
 
@@ -117,7 +117,7 @@ export default function OtherTeam() {
 
     return (
         <div className="container">
-            <h1>Lobby Name - Team Name</h1>
+            <h1><Link to={`/lobbies/${lobbyId}`}>{lobby.name? lobby.name: "Lobby Name"}</Link> - {lobby.name? lobby.teams[teamIndex].name: "Team Name"}</h1>
             <div className="page-content">
                 <div className="members">
                     <div className="header">
